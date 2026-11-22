@@ -1,0 +1,11 @@
+{
+  "name": "Lint and Format on Save",
+  "trigger": "PostFileSave",
+  "condition": {
+    "filePattern": "apps/api/**/*.{ts,js}"
+  },
+  "action": {
+    "type": "shell",
+    "command": "npx eslint --fix ${file} && npx prettier --write ${file}"
+  }
+}

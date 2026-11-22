@@ -1,0 +1,11 @@
+{
+  "name": "Sync README when API routes change",
+  "trigger": "PostFileSave",
+  "condition": {
+    "filePattern": "apps/api/src/routes/**/*.ts"
+  },
+  "action": {
+    "type": "agent",
+    "prompt": "A route file changed at ${file}. Update the API Endpoints section in README.md to reflect any new, changed, or removed routes. Keep existing README content intact."
+  }
+}

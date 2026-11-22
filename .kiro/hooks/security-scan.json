@@ -1,0 +1,8 @@
+{
+  "name": "Secret Scanner on Session Stop",
+  "trigger": "Stop",
+  "action": {
+    "type": "agent",
+    "prompt": "Scan all recently modified files in apps/api/ for hardcoded secrets, API keys, passwords, tokens, or database credentials. If any found, report them in a file called security-report.md at the project root."
+  }
+}

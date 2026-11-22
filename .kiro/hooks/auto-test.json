@@ -1,0 +1,12 @@
+{
+  "name": "Generate Tests for New API Files",
+  "trigger": "PostFileSave",
+  "condition": {
+    "filePattern": "apps/api/src/**/*.ts",
+    "excludePattern": "**/*.test.ts"
+  },
+  "action": {
+    "type": "agent",
+    "prompt": "A new file was saved at ${file}. If it exports functions or classes, generate a corresponding .test.ts file with Jest unit tests covering the main logic and edge cases. Place the test file alongside the source file."
+  }
+}

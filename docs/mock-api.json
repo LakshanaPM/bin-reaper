@@ -1,0 +1,23 @@
+{
+  "rule": {
+    "success": true,
+    "data": {
+      "item": "pizza_box",
+      "bin": "wet_waste",
+      "color": "#4CAF50",
+      "label": "Green Bin",
+      "instructions": "Remove leftover food. Flatten the box. Place in green bin.",
+      "city": "bangalore"
+    },
+    "error": null
+  },
+  "cities": {
+    "success": true,
+    "data": [
+      { "id": "bangalore", "name": "Bengaluru", "country": "india", "bins": { "wet_waste": { "color": "#4CAF50", "label": "Green Bin" }, "dry_waste": { "color": "#2196F3", "label": "Blue Bin" }, "hazardous": { "color": "#F44336", "label": "Red Bin" } } },
+      { "id": "london", "name": "London", "country": "uk", "bins": { "recycling": { "color": "#2196F3", "label": "Blue Bin" }, "general": { "color": "#795548", "label": "Brown Bin" }, "food": { "color": "#4CAF50", "label": "Green Bin" } } },
+      { "id": "new_york", "name": "New York", "country": "usa", "bins": { "recycling": { "color": "#2196F3", "label": "Blue Bin" }, "trash": { "color": "#607D8B", "label": "Black Bin" }, "organics": { "color": "#4CAF50", "label": "Green Bin" } } }
+    ],
+    "error": null
+  }
+}
